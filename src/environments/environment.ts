@@ -1,9 +1,11 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
 export const environment = {
-  production: false
+  production: false,
+  remoteApi: 'https://gorest.co.in/public/v2/users',
+  token: '10bcee46db8165b3de8d01b65a40591d5c2a6eea52e005ae9460fd66b93bd8ff',
+  localApi: 'http://localhost:3000/api',
 };
 
 /*

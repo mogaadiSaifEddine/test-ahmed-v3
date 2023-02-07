@@ -1,0 +1,10 @@
+<div *ngIf="!loading" class="grid">
+  <app-card
+    [item]="item"
+    *ngFor="let item of favsList"
+    [parent]="'fav'"
+  ></app-card>
+</div>
+
+<mat-progress-spinner *ngIf="loading" class="example-margin" [diameter]="40">
+</mat-progress-spinner>

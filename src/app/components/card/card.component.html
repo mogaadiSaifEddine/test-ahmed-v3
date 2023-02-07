@@ -1,0 +1,21 @@
+<mat-card style="flex: 1" class="example-card">
+  <div class="flex-column">
+    <span> {{ item.name }} </span>
+    <span>{{ item.email }}</span>
+  </div>
+  <img
+    mat-card-image
+    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-content>
+    <p>
+      {{ item.gender }}
+    </p>
+
+    <mat-checkbox *ngIf="parent !== 'fav'" (change)="check($event)"
+      >add to favorits
+    </mat-checkbox>
+  </mat-card-content>
+  9</mat-card
+>
